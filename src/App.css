@@ -2,37 +2,64 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  position: fixed;
+  width: 100%;
+  padding-top:10px;
+  padding-bottom: 15px;
+  background-color: #282836;
+  box-shadow: 0px 5px 10px rgba(40, 40, 54, 0.25);
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header_wrapper {
+ margin-left:400px;
+ margin-right:100px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  align-items: justify;
+  justify-content: space-between;
+  padding-top: 15px;
+  background-color: #282836;
 }
 
-.App-link {
-  color: #61dafb;
+.header_link {
+    color: white;
+    text-decoration: none;
+    font-family: "";
+    font-weight: 900;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header_item {
+    padding-left:50px;
+    padding-right:50px;
+    align: center;
+}
+.button {
+    background: #8B90FF;
+        border: 0;
+        border-radius: 4px;
+        padding: 8px 12px;
+        width: 115px;
+        height: 36px;
+        font-family: 'WorkSans-SemiBold';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        font-feature-settings: 'liga' off;
+        color: #F9FEFD;
+}
+
+.intro {
+    padding-top: 200px;
+    max-width: 1440px;
+    height: 512px;
+}
+
+.image {
+    background-image: url('https://nftstorage.link/ipfs/bafybeigkziatrjl6i6kavy2fedhhnupduj6777jeqo4d6wvrx5ld5orguy');
+    background-repeat: no-repeat;
+    background-size: cover;
 }

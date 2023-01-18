@@ -1,0 +1,32 @@
+{
+  "contractName": "Artefact",
+  "nftName": "Artefact",
+  "nftSymbol": "ARTE",
+  "maxSupply": 3333,
+  "saleType": {
+    "allowlistSale": { "mintPrice": "0.01"},
+    "publicSale": { "mintPrice": "0.012"}
+  },
+  "contractAddress" : "0xfa969c60a78195c631787d4585ba15a07578c979",
+  "contractAddresses": {
+    "1337": [],
+    "4": [],
+    "1": ["0xfa969c60a78195c631787d4585ba15a07578c979"]
+  },
+  "customErrors": {
+    "WL_SALE_NOT_ACTIVE": "Whitelist mint is not live or over!",
+    "PUBLIC_SALE_NOT_ACTIVE": "Public mint is not live yet!",
+    "PROOF_INVALID": "Invalid Whitelist Proof",
+    "NOT_ENOUGH_SUPPLY": "Max supply exceeded!",
+    "EXCEED_WL_MINT_LIMIT": "Whitelist limit already minted for wallet!",
+    "ONLY_1_IS_ALLOWED": "Can only mint 1 per wallet!",
+    "ONLY_2_IS_ALLOWED": "Can only mint 2 per wallet!",
+    "WRONG_ETH_VALUE": "Insufficient funds!"
+  },
+  "gasToken": "ETH",
+  "openSeaURL": "https://opensea.io/collection/",
+  "twitterURL": "https://www.twitter.com/",
+  "etherscanURL": "https://www.etherscan.io/address/0x8fb6ec891f80d0da0e966a54ed403f5149a347c8",
+  "chainIDConfig": "1",
+  "chainName": "MainNet"
+}
