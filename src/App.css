@@ -59,7 +59,13 @@
 }
 
 .image {
-    background-image: url('https://nftstorage.link/ipfs/bafybeigkziatrjl6i6kavy2fedhhnupduj6777jeqo4d6wvrx5ld5orguy');
+    background-image: url('https://nftstorage.link/ipfs/bafybeics4slcijqc4vqpdkiuosrq4voeupjd2soe2q6oswtusddbffi6xa');
     background-repeat: no-repeat;
     background-size: cover;
+      /* Set up proportionate scaling */
+        position: fixed;
+        top: 0;
+        left: 0;
+      min-width: 100%;
+      min-height: 100%;
 }
