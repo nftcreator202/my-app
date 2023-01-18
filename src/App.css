@@ -58,11 +58,16 @@
     height: 512px;
 }
 
+/*
 body {
-  /* background-color: #48946a; */
+  */
+/* background-color: #48946a; *//*
+
   margin: 0 auto;
   background-color: #214B18;
-  /* background-color: #3a891d; */
+  */
+/* background-color: #3a891d; *//*
+
   background-image: url(https://nftstorage.link/ipfs/bafybeics4slcijqc4vqpdkiuosrq4voeupjd2soe2q6oswtusddbffi6xa);
   background-repeat: no-repeat;
   background-position: top center;
@@ -71,4 +76,39 @@ body {
   moz-background-size: 100%;
   o-background-size: 100%;
   background-size: 100%;
+}*/
+
+
+body {
+  margin: 0 auto;
+  background-image: url(https://nftstorage.link/ipfs/bafybeicezzgre6dskpjnm7biua5wk2tx4q2z3ki7hf3425mmhdj5bmpcte);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-image: url(https://nftstorage.link/ipfs/bafkreicceut7t2w2q3yeoqttwbymgd4vzf2pi5vjvfm4mdobx27nrkbag4);
+    height: 100%;
+    width: 100%;
+    }
+  /* For mobile phones: */
+
+  .wallet-checker-text {
+    color: white;
+    font-size: 14px;
+    margin-left: 14%;
+    margin-top: 300px;
+  }
+
+  .wallet-checker-input {
+    margin-left : 14%;
+    width: 300px;
+  }
+
+
+
+
 }
