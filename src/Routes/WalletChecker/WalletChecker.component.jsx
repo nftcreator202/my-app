@@ -23,14 +23,12 @@ const WalletChecker = () => {
   return (
      <div>
 
-        <div>
-            <div className="wallet-checker-text">WALLET CHECKER</div>
-            <input
-                type="text"
-                className="wallet-checker-input"
-                onChange = { checkWallet }
-            />
-        </div>
+    <div className="wallet-checker-text">WALLET CHECKER</div>
+    <input
+        type="text"
+        className="wallet-checker-input"
+        onChange = { checkWallet }
+    />
      <div >
         { checkStarted ?
         ( <div>
