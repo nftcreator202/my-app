@@ -12,14 +12,6 @@ code {
     monospace;
 }
 
-.body {
-  margin: 0 auto;
-  background-image: url(https://nftstorage.link/ipfs/bafybeicezzgre6dskpjnm7biua5wk2tx4q2z3ki7hf3425mmhdj5bmpcte);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-}
-
 .connect-wallet-button {
     margin-top: 15px;
     margin-left: 1280px;
@@ -33,18 +25,6 @@ code {
     background-color:inherit;
     font-family: "sans-serif";
     text-align: center;
-}
-
-.whitelist-text {
-    color: green;
-    margin-left: 600px;
-    margin-top: 350px;
-}
-
-.not-whitelist-text {
-    color: red;
-    margin-left: 600px;
-    margin-top: 400px;
 }
 
 .wallet-checker-text {
@@ -65,29 +45,6 @@ code {
     background-color: transparent;
     color: yellow;
 }
-
-@media only screen and (max-width: 768px) {
-  .body {
-    background-image: url(https://nftstorage.link/ipfs/bafkreicceut7t2w2q3yeoqttwbymgd4vzf2pi5vjvfm4mdobx27nrkbag4);
-    background-size: contain;
-    height: 100%;
-    }
-  /* For mobile phones: */
-  .wallet-checker-input {
-    margin-left : 12%;
-    width: 300px;
-  }
-
-  .wallet-checker-text {
-      color: white;
-      font-size: 14px;
-      margin-left: 12%;
-      margin-top: 30%;
-  }
-
-
-}
-
 
 .wallet-unlisted {
     margin-left: 660px;
@@ -162,4 +119,33 @@ code {
     font-family: "sans-serif";
     text-align: center;
 }
+
+
+
+@media only screen and (max-width: 768px) {
+
+  .wallet-checker-text {
+    color: white;
+    font-size: 14px;
+    margin-left: 10%;
+    margin-top: 300px;
+  }
+
+  .wallet-checker-input {
+    margin-left : 10%;
+    width: 300px;
+  }
+
+  .wallet-unlisted {
+      margin-left: 35%;
+      margin-top: 40px;
+  }
+
+  .wallet-whitelisted {
+      margin-left: 22%;
+      margin-top: 40px;
+  }
+}
+
+
 

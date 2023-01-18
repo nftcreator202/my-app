@@ -95,20 +95,4 @@ body {
     width: 100%;
     }
   /* For mobile phones: */
-
-  .wallet-checker-text {
-    color: white;
-    font-size: 14px;
-    margin-left: 14%;
-    margin-top: 300px;
-  }
-
-  .wallet-checker-input {
-    margin-left : 14%;
-    width: 300px;
-  }
-
-
-
-
 }
