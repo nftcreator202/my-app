@@ -28,7 +28,6 @@ export const Web3Provider = ({ children }) => {
   const [mintAmount, setMintAmount] = useState(1);
   const isConnected = Boolean(currentAccount[0]);
   const [saleState, setSaleState] = useState(0);
-  const [wl, setWl] = useState(true);
   const [proof, setProof] = useState(false);
   const toastId = React.useRef(null);
 
@@ -39,32 +38,11 @@ export const Web3Provider = ({ children }) => {
   // Multiple getter functions
   const [totalSupply, setTotalSupply] = useState(0);
 
-  const checkWlMints = async () => {
-    const contract = initContract();
-    const accounts = await window.ethereum.request({
-      method: "eth_requestAccounts",
-    });
-    const valid = VerifyWallet(accounts[0]);
-
-    const response = await contract.totalWlMint(accounts[0]);
-
-    // console.log(response);
-    let parsedWl = parseInt(response.toString());
-
-    if (parsedWl < 10 && valid) {
-      setWl(true);
-      console.log(valid);
-    } else {
-      setWl(false);
-      console.log(valid);
-    }
-  };
-
   const isValid = (address) => {
     const valid = VerifyWallet(address);
 
     setProof(valid);
-    // console.log(valid);
+    console.log(valid);
 
     return proof;
   };
@@ -78,11 +56,11 @@ export const Web3Provider = ({ children }) => {
   };
 
   const getMintingStatus = async () => {
-      //const contract = initContract();
+     const contract = initContract();
 
-     // let response = (await contract.getMintingStatus()).toNumber();
+     let response = (await contract.getSaleState());
 
-      setSaleState(1);
+     setSaleState(response);
     };
 
   // function to connect user wallet
@@ -97,14 +75,11 @@ export const Web3Provider = ({ children }) => {
         isValid(accounts[0]);
         initContract();
         setCurrentAccount(accounts[0]);
-         //checkWlMints();
       }
 
       let chainId = await window.ethereum.request({
         method: "eth_chainId",
       });
-      console.log("Connected to chainId", chainId);
-      console.log("Current account", currentAccount)
       const ethereumChainId = "0x1";
       if (chainId !== ethereumChainId) {
         // "Collection is only available on Ethereum mainnet, Please switch to mainnet"
@@ -156,7 +131,7 @@ export const Web3Provider = ({ children }) => {
     let value = x.toString();
 
     if (balance >= totalCost) {
-      const response = await contract.mint(BigNumber.from(mintAmount), {
+      const response = await contract.publicMint(BigNumber.from(mintAmount), {
         value: ethers.utils.parseEther(value, "ether"),
       });
 
@@ -167,8 +142,8 @@ export const Web3Provider = ({ children }) => {
         toast.dismiss(toastId.current);
         toast.success(
           mintAmount <= 1
-            ? `Mint successful, ${mintAmount} Peperino has entered the blockchain`
-            : `Mint successful, ${mintAmount} Peperinos have entered the blockchain`,
+            ? `Mint successful, ${mintAmount} Chest has entered the blockchain`
+            : `Mint successful, ${mintAmount} Chests have entered the blockchain`,
           {
             position: "top-center",
             autoClose: 5000,
@@ -212,10 +187,7 @@ export const Web3Provider = ({ children }) => {
   };
 
   const publicMint = async () => {
-    console.log("Am i here");
     if (isConnected) {
-      // const goerliChainId = "0x5";
-      console.log("In public mint connected");
       const ethereumChainId = "0x1";
       let chainId = await window.ethereum.request({
         method: "eth_chainId",
@@ -278,9 +250,9 @@ export const Web3Provider = ({ children }) => {
     let x = totalCost.toFixed(3);
     let value = x.toString();
 
-    const response = await contract.whitelistMint(
-      BigNumber.from(mintAmount),
+    const response = await contract.wlMint(
       proof,
+      BigNumber.from(mintAmount),
       {
         value: ethers.utils.parseEther(value, "ether"),
       }
@@ -326,7 +298,6 @@ export const Web3Provider = ({ children }) => {
   };
 
   const whitelistMint = async () => {
-    console.log("I am in whitelist mint");
     if (isConnected) {
       const ethereumChainId = "0x1";
       let chainId = await window.ethereum.request({
@@ -437,8 +408,6 @@ export const Web3Provider = ({ children }) => {
         publicMint,
         isValid,
         proof,
-        checkWlMints,
-        wl,
       }}
     >
       {children}

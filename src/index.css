@@ -89,12 +89,12 @@ code {
 
 .mint-amt {
     color:white;
-    padding-left: 50px;
+    padding-left: 20px;
     font-size: 26px;
 }
 
 .plus-btn {
-    padding-left: 50px;
+    padding-left: 20px;
     color: white;
     width: 30px;
     padding-top: 10px;
@@ -107,7 +107,7 @@ code {
 
 .mint-btn {
     margin-top: 30px;
-    margin-left: 680px;
+    margin-left: 655px;
     cursor: pointer;
     border: 2px solid yellow;
     color: white;
@@ -144,6 +144,43 @@ code {
   .wallet-whitelisted {
       margin-left: 22%;
       margin-top: 40px;
+  }
+
+  .connect-wallet-button {
+      margin-top: 15px;
+      margin-left: 75%;
+      font-size: 10px;
+      width: 20%;
+  }
+
+  .supply {
+      margin-left: 25%;
+      margin-top: 50%;
+      font-size : 20px;
+  }
+
+  .minus-btn {
+      margin-left: 40%;
+      width: 30px;
+      padding-bottom: 10px;
+      font-size: 24px;
+  }
+
+  .mint-amt {
+      padding-left: 3px;
+      font-size: 20px;
+  }
+
+  .plus-btn {
+      padding-left: 15px;
+      font-size: 20px;
+  }
+
+  .mint-btn {
+      margin-top: 30px;
+      margin-left: 35%;
+      font-size: 16px;
+      width: 116px;
   }
 }
 

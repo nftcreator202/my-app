@@ -58,27 +58,6 @@
     height: 512px;
 }
 
-/*
-body {
-  */
-/* background-color: #48946a; *//*
-
-  margin: 0 auto;
-  background-color: #214B18;
-  */
-/* background-color: #3a891d; *//*
-
-  background-image: url(https://nftstorage.link/ipfs/bafybeics4slcijqc4vqpdkiuosrq4voeupjd2soe2q6oswtusddbffi6xa);
-  background-repeat: no-repeat;
-  background-position: top center;
-  color: black;
-  webkit-background-size: 100%;
-  moz-background-size: 100%;
-  o-background-size: 100%;
-  background-size: 100%;
-}*/
-
-
 body {
   margin: 0 auto;
   background-image: url(https://nftstorage.link/ipfs/bafybeics4slcijqc4vqpdkiuosrq4voeupjd2soe2q6oswtusddbffi6xa);

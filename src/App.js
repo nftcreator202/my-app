@@ -11,7 +11,7 @@ function App() {
 
 
       <Routes>
-        <Route exact path="/" element={<WalletChecker />} />
+        <Route exact path="/" element={<Mint />} />
         <Route exact path="walletchecker" element={<WalletChecker />} />
       </Routes>
     </BrowserRouter>

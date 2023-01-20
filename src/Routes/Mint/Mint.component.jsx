@@ -22,7 +22,7 @@ const Mint = () => {
 
         <button className="connect-wallet-button" onClick={connectWallet}> Connect Wallet </button>
         )}
-  <div >
+    <div >
         <div><MintCard /></div>
      </div>
 
