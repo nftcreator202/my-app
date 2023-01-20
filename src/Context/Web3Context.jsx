@@ -246,7 +246,7 @@ export const Web3Provider = ({ children }) => {
       method: "eth_requestAccounts",
     });
     const proof = MerkleProof(accounts[0]);
-    let totalCost = mintAmount * 0.01;
+    let totalCost = mintAmount * 0;
     let x = totalCost.toFixed(3);
     let value = x.toString();
 
