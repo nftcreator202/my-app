@@ -126,7 +126,7 @@ export const Web3Provider = ({ children }) => {
     let formattedBalance = ethers.utils.formatEther(balanceResponse);
     let balance = formattedBalance * 1;
 
-    let totalCost = mintAmount * 0.005;
+    let totalCost = mintAmount * 0;
     let x = totalCost.toFixed(4);
     let value = x.toString();
 
