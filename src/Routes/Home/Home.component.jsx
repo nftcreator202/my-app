@@ -4,8 +4,8 @@ import React, { useContext, useState } from "react";
 const Home = () => {
 
   return (
-    <div id="ABC">
-        <section  class="flex-container">
+    <div >
+        <section class="flex-container">
             <img class="flex-item img-top" src="https://nftstorage.link/ipfs/bafkreicubaoqbeyr4cpz7ibaoyzhgpuky75akm6zyyah5mi2zemw5z7sz4" alt="Flower"></img>
             <div class="flex-item">
                 <p class="font-header">Fallen Realms</p>
@@ -45,8 +45,17 @@ const Home = () => {
             Fallen Realms art collection contains limited edition of 555 individual pieces of Abstract Folk Art. Each piece of this collection is highly detailed and 1/1.
              </p>
              <p>
-            Join our premint <a href="https://www.premint.xyz/Fallenrealms/" target="_blank"> here</a>
+            Join our premint <a href="https://www.premint.xyz/Fallenrealms/" target="_blank"> here</a>.
             </p>
+            <br/>
+           <p >
+            Follow us on <a  href="https://twitter.com/FallenRealmsNFT" target="_blank">Twitter </a>
+            to stay updated.
+
+            </p>
+
+            <br/>
+            <br/>
         </section>
 
     </div>
