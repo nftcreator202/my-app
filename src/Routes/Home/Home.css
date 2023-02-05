@@ -29,34 +29,32 @@
 }
 
 .font-header {
-  line-height: 250px;
   display: block;
   font-size: 1.2em;
   font-weight: bold;
-  margin-block-start: 10px;
+  margin-block-start: 100px;
   margin-block-end: 0px;
-  height:40px;
+  height:110px;
   font-family:fantasy;
 }
 
 .artist-info {
-  padding : 50px;
   display: block;
   font-size: 0.4em;
   font-weight: normal;
-  margin-block-start: 10px;
-  height: 50px;
+  height: 100px;
+  margin-block-start: -40px;
+  margin-block-end:0px;
   font-family:math;
-  flex-wrap: nowrap;
 }
 
 .art-info {
   display: block;
   font-size: 0.4em;
   font-weight: normal;
-  margin-block-start: 10px;
-  margin-block-end: 10px;
   height:50px;
+    margin-block-start: -40px;
+    margin-block-end:0px;
   font-family:math;
 }
 
@@ -132,7 +130,6 @@ a:active { text-decoration: none; }
     margin-right: 300px;
     margin-bottom: 200px;
     height: 500px;
-    padding-top: 100px;
     font-family: Monaco;
     font-size: 20px;
     color: white;
@@ -140,23 +137,85 @@ a:active { text-decoration: none; }
 }
 
 @media only screen and (max-width: 768px) {
-.flex-container {
-  height:100%;
-  width:100%;
-}
 
-.flex-item {
-  padding-top:50px;
-  width: 100px;
-  height: 100px;
-  margin-top: 50px;
-  line-height: 20%;
-}
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 25px;
+        align: center;
+        margin-top: 40px;
 
-.font-header {
-  line-height: 50px;
-  font-size: 1em;
-  height:20px;
-}
+    }
+
+    .flex-item {
+      width: 400px;
+      height: 380px;
+      color: white;
+      font-weight: bold;
+      font-size: 3em;
+      text-align: center;
+    }
+
+    .img-top {
+     padding-left: 10px;
+    }
+
+    .font-header {
+      margin-block-start: 20px;
+      margin-block-end: 0px;
+    }
+
+    .artist-info {
+      height: 100px;
+      margin-block-start: -60px;
+      margin-block-end: 10px;
+    }
+
+    .art-info {
+        height:100px;
+        margin-block-start: -40px;
+        margin-block-end:-50px;
+        font-size: 0.35em;
+    }
+
+    .flex-container-2 {
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-left: 0px;
+        margin-right:0px;
+        margin-bottom: 40%;
+        height: auto;
+        width: 100%;
+        padding-top: 50px;
+        font-size: 17px;
+        color: white;
+        text-align: center;
+    }
+
+    .flex-container-3 {
+      display: flex;
+      flex-flow: column;
+      justify-content: space-evenly;
+      padding-top: 40px;
+      padding-left: 40px;
+      width: 100%;
+    }
+
+    .flex-item-3 {
+      height: 40%;
+    }
+
+    .flex-container-4 {
+        padding-bottom:20px;
+        padding-top:10px;
+        margin-left:50px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        height: 100%;
+        width: 100%;
+        font-size: 17px;
+        color: white;
+        text-align: center;
+    }
 
 }

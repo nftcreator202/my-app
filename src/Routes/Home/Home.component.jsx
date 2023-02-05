@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div id="ABC">
         <section  class="flex-container">
-            <img class="flex-item" src="https://nftstorage.link/ipfs/bafkreicubaoqbeyr4cpz7ibaoyzhgpuky75akm6zyyah5mi2zemw5z7sz4" alt="Flower"></img>
+            <img class="flex-item img-top" src="https://nftstorage.link/ipfs/bafkreicubaoqbeyr4cpz7ibaoyzhgpuky75akm6zyyah5mi2zemw5z7sz4" alt="Flower"></img>
             <div class="flex-item">
                 <p class="font-header">Fallen Realms</p>
                 <p class="artist-info">NFT Project by Emmanuel Pallassi Jr</p>
@@ -31,6 +31,7 @@ const Home = () => {
         </section>
         <section class="flex-container-4">
         <h1>What is Fallen Realms?</h1>
+        <br/>
             <p>
             Introducing Fallen Realms, a folk art created by combining elements of traditional folk art with the abstract art form. It is characterized by its use of bold colors, simple forms, and decorative elements, drawing inspiration from folk art traditions around the world.
              </p>
