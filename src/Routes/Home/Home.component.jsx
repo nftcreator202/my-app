@@ -1,8 +1,6 @@
 import "./Home.css";
 import React, { useContext, useState } from "react";
 
-import { Web3Context } from "../../Context/Web3Context";
-
 const Home = () => {
 
   return (
