@@ -141,10 +141,10 @@ a:active { text-decoration: none; }
     .flex-container {
         display: flex;
         flex-direction: column;
-        margin-left: 25px;
+        margin-left: 10%;
+        margin-right: 10%;
         align: center;
         margin-top: 40px;
-
     }
 
     .flex-item {
@@ -157,26 +157,35 @@ a:active { text-decoration: none; }
     }
 
     .img-top {
-     padding-left: 10px;
+        margin-left: 10%;
+         margin-right: 10%;
     }
 
     .font-header {
       margin-block-start: 20px;
       margin-block-end: 0px;
+      margin-left: 12%;
     }
 
     .artist-info {
       height: 100px;
-      margin-block-start: -60px;
+      margin-block-start: -70px;
       margin-block-end: 10px;
+       margin-left: 12%;
     }
 
     .art-info {
         height:100px;
         margin-block-start: -40px;
-        margin-block-end:-50px;
+        margin-block-end:-60px;
         font-size: 0.35em;
+         margin-left: 12%;
     }
+
+    .aboutme{
+     margin-left: 12%;
+     }
+
 
     .flex-container-2 {
         padding-left: 50px;
@@ -196,8 +205,10 @@ a:active { text-decoration: none; }
       display: flex;
       flex-flow: column;
       justify-content: space-evenly;
-      padding-top: 40px;
-      padding-left: 40px;
+      padding-top: 50px;
+      padding-left: 0px;
+      margin-left: 15%;
+      margin-right:15%;
       width: 100%;
     }
 
