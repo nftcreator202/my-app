@@ -29,6 +29,24 @@ const Home = () => {
             <img class="flex-item-3" src="https://nftstorage.link/ipfs/bafkreifzzipvo6glpwpddf4mpbuuos37hy4ibvos72qeovspfo6ozztit4" alt="Flower"></img>
             <img class="flex-item-3" src="https://nftstorage.link/ipfs/bafkreidw5j2sqavxr6mhcifsnzcu6xr2lmqp6kpvauvgs6cb75bzp2f4ri" alt="Flower"></img>
         </section>
+        <section class="flex-container-4">
+        <h1>What is Fallen Realms?</h1>
+            <p>
+            Introducing Fallen Realms, a folk art created by combining elements of traditional folk art with the abstract art form. It is characterized by its use of bold colors, simple forms, and decorative elements, drawing inspiration from folk art traditions around the world.
+             </p>
+             <p>
+            Folk art is one of the ancient and beloved art styles of the great painters and artists across the world. Now, bringing this ancient art style to the most modern era of Web3 with the help of AI by the artist Emmanuel Pallassi Jr.
+             </p>
+             <p>
+            The beauty of these artworks is admirable. They're also backed by the power of blockchain technology in the Ethereum blockchain, making them verifiably authentic and scarce for you to collect.
+             </p>
+             <p>
+            Fallen Realms art collection contains limited edition of 555 individual pieces of Abstract Folk Art. Each piece of this collection is highly detailed and 1/1.
+             </p>
+             <p>
+            Join our premint <a href="https://www.premint.xyz/Fallenrealms/" target="_blank"> here</a>
+            </p>
+        </section>
 
     </div>
   );
