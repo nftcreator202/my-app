@@ -18,7 +18,7 @@ const Home = () => {
 
     </div>
     <div>
-    <img class="flex-item img-top" src="https://nftstorage.link/ipfs/bafybeicakuaa4agfupd4gejh4qf6l2ieisvtjzey3bphwqyv2wg7nqixzi" alt="Backgd"></img>
+    <img class="flex-item img-top" src="https://nftstorage.link/ipfs/bafybeibdv52ahvcwb6xzz7wqelhwutkmvfh2j2pcarqrjetomjvgovh4d4" alt="Backgd"></img>
     </div>
 
     <section id="aboutme" class="flex-container-2">
