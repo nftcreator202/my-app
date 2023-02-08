@@ -214,8 +214,8 @@ a:hover { text-decoration: none; }
 a:active { text-decoration: none; }
 
 a {
-  color: black;
-  font-weight:bold;
+  color: yellow;
+  font-weight: bold;
 }
 
 

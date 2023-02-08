@@ -33,7 +33,7 @@ const Home = () => {
         </section>
 
     <div class="footer" >
-      <p class="twitter-txt">Follow us on <a  href="https://twitter.com/FallenRealmsNFT" target="_blank">Twitter </a>
+      <p class="twitter-txt">Follow us on <a href="https://twitter.com/FallenRealmsNFT" target="_blank">Twitter </a>
       to stay updated.</p>
 
     </div>
