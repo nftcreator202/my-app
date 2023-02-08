@@ -1,52 +1,34 @@
 
-.flex-container {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-evenly;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
 .flex-item {
-  width: 500px;
-  height: 70%;
-  margin-top: 6%;
-  line-height: 150px;
-  color: white;
-  font-weight: bold;
-  font-size: 3em;
-  text-align: center;
+  width: 100%;
+  height: 600px;
 }
 
 .font-header {
-  display: block;
-  font-size: 1.2em;
+  font-size: 4em;
   font-weight: bold;
   margin-block-start: 100px;
   margin-block-end: 0px;
-  height:110px;
   font-family:fantasy;
+  color:white;
 }
 
 .artist-info {
-  display: block;
-  font-size: 0.4em;
+  font-size: 1.2em;
   font-weight: normal;
-  height: 100px;
-  margin-block-start: -40px;
-  margin-block-end:0px;
+  height: 60px;
+  margin-block-start: -10px;
   font-family:math;
+  color: white;
 }
 
 .art-info {
-  display: block;
-  font-size: 0.4em;
+  font-size: 1em;
   font-weight: normal;
-  height:50px;
-    margin-block-start: -40px;
+  margin-block-start: -40px;
     margin-block-end:0px;
   font-family:math;
+  color: white;
 }
 
 .aboutme {
@@ -97,12 +79,6 @@
 .flex-container-2 {
     margin-left:300px;
     margin-right: 300px;
-    margin-bottom: 200px;
-    height: 500px;
-    padding-top: 100px;
-    font-family: Monaco;
-    font-size: 20px;
-    color: white;
     text-align: center;
 }
 
@@ -110,8 +86,8 @@
   display: flex;
   flex-flow: row;
   justify-content: space-evenly;
-  padding-top: 150px;
-  padding-bottom:100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .flex-item-3 {
@@ -240,4 +216,55 @@ a:active { text-decoration: none; }
 a {
   color: black;
   font-weight:bold;
+}
+
+
+.spacer {
+  flex: 1;
+}
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background-color: #052929;
+  color: white;
+  font-weight: 600;
+}
+
+.title_fallen {
+  margin-left : 50px;
+}
+
+.toolbar img {
+  margin: 0 16px;
+}
+
+.toolbar #twitter-logo {
+  padding-right : 30px;
+  height: 40px;
+  margin: 0 8px;
+}
+
+
+.toolbar #twitter-logo:hover {
+  opacity: 0.8;
+}
+
+.footer {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  background-color: #052929;
+  color: white;
+  text-align: center;
+}
+
+.twitter-txt {
+ text-align: center;
+ padding-left : 600px;
+
 }
