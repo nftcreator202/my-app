@@ -1,34 +1,34 @@
 
 .flex-item {
   width: 100%;
-  height: 600px;
+  height: 700px;
 }
 
 .font-header {
-  font-size: 4em;
+  font-size: 5em;
   font-weight: bold;
   margin-block-start: 100px;
   margin-block-end: 0px;
   font-family:fantasy;
-  color:white;
+  color:#5C2416;
 }
 
 .artist-info {
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: normal;
   height: 60px;
   margin-block-start: -10px;
   font-family:math;
-  color: white;
+  color: #5C2416;
 }
 
 .art-info {
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: normal;
   margin-block-start: -40px;
-    margin-block-end:0px;
+  margin-block-end:0px;
   font-family:math;
-  color: white;
+  color: #5C2416;
 }
 
 .aboutme {
@@ -214,7 +214,7 @@ a:hover { text-decoration: none; }
 a:active { text-decoration: none; }
 
 a {
-  color: yellow;
+  color: black;
   font-weight: bold;
 }
 
@@ -230,13 +230,15 @@ a {
   height: 80px;
   display: flex;
   align-items: center;
-  background-color: #052929;
-  color: white;
-  font-weight: 600;
+  background-color: #E8D29E;
 }
 
 .title_fallen {
+  color: #5C2416;
+  font-weight: bold;
+  font-size: 30px;
   margin-left : 50px;
+  font-family: cursive;
 }
 
 .toolbar img {
@@ -258,12 +260,14 @@ a {
   height: 100px;
   display: flex;
   align-items: center;
-  background-color: #052929;
+  background-color: #E8D29E;
   color: white;
   text-align: center;
 }
 
 .twitter-txt {
+ color: brown;
+ font-weight:bold;
  text-align: center;
  padding-left : 600px;
 
