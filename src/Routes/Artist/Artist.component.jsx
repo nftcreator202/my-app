@@ -21,8 +21,8 @@ const Project = () => {
     </div>
 
     <section class="flex-container">
-        <img class="artist-flex-item img-top" src="https://nftstorage.link/ipfs/bafkreicubaoqbeyr4cpz7ibaoyzhgpuky75akm6zyyah5mi2zemw5z7sz4" alt="Flower"></img>
-        <div class="artist-flex-item">
+        <img class="artist-flex-item img-top" src="/art4.jpeg" alt="Art Piece 4"></img>
+        <div >
             <p class="artist-page-info">
             Hello. I am Emmanuel Pallassi Jr., a folk artist and engineer from Europe.
             I am coming to web3 with my limited collection made by mixing my folk art
@@ -31,7 +31,7 @@ const Project = () => {
         </div>
     </section>
 
-    <div class="footer" >
+    <div class="footer_artist_page" >
       <p class="twitter-txt">Follow us on <a href="https://twitter.com/FallenRealmsNFT" target="_blank">Twitter </a>
       to stay updated.</p>
 

@@ -144,6 +144,17 @@
   padding-right: 150px;
 }
 
+
+.flex-container-project-images {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
 .flex-item-3 {
   width: 300px;
   height: 60%;
@@ -168,15 +179,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-
-    .flex-container {
-        display: flex;
-        flex-direction: column;
-        margin-left: 10%;
-        margin-right: 10%;
-        align: center;
-        margin-top: 40px;
-    }
 
     .aboutme{
      margin-left: 12%;
@@ -216,6 +218,15 @@ a {
   text-align: center;
 }
 
+.footer_artist_page {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  background-color: #E8D29E;
+  color: white;
+  text-align: center;
+}
+
 .twitter-txt {
  color: brown;
  font-weight:bold;
@@ -245,16 +256,19 @@ a {
   padding: 0;
   margin: 0;
   list-style: none;
+  height: 700px;
 }
 
 .artist-flex-item {
-  padding-top: 105px;
+  padding-top: 145px;
   width: 500px;
   height: 500px;
-  padding-bottom: 30px;
 }
+
 .artist-page-info {
-  padding-top: 140px;
+  width: 500px;
+  height: 500px;
+  padding-top: 270px;
   font-size: 1.4em;
   font-weight: bold;
   text-align: center;
@@ -335,9 +349,49 @@ a {
       padding-bottom: 50px;
     }
 
+    .flex-container-project-images {
+      flex-flow: column;
+      justify-content: space-evenly;
+      padding-top: 200px;
+      padding-bottom: 50px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
     .title_fallen {
       font-size: 18px;
       margin-left : 18px;
       font-family: fantasy;
+    }
+
+    .project-info {
+      margin-left: 50px;
+      margin-right: 50px;
+      padding-top: 110px;
+      font-size: 1em;
+    }
+
+    .flex-container {
+      flex-flow: column;
+      height:700px;
+    }
+
+    .artist-flex-item {
+      padding-top: 80px;
+      width: 375px;
+      height: 400px;
+      padding-bottom: 20px;
+    }
+
+    .artist-page-info {
+      width: 375px;
+      height: 170px;
+      padding-top: 0px;
+      font-size: 1.1em;
+
+    }
+
+    .footer_artist_page {
+      height: 80px;
     }
 }

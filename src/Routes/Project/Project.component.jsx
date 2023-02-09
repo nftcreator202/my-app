@@ -42,10 +42,12 @@ const Project = () => {
            <br/>
           Join our premint <a href="https://www.premint.xyz/Fallenrealms/" target="_blank">here</a> </p>
     </section>
-        <section id="portfolio" class="flex-container-3">
-            <img class="flex-item-3" src="https://nftstorage.link/ipfs/bafybeicdpdrj3sg7jhcungwrfnqkefdbb3betoaivv353gafvfzp2sit3e" alt="Art Piece 1"></img>
-            <img class="flex-item-3" src="https://nftstorage.link/ipfs/bafkreifzzipvo6glpwpddf4mpbuuos37hy4ibvos72qeovspfo6ozztit4" alt="Art Piece 2"></img>
-            <img class="flex-item-3" src="https://nftstorage.link/ipfs/bafkreidw5j2sqavxr6mhcifsnzcu6xr2lmqp6kpvauvgs6cb75bzp2f4ri" alt="Art Piece 3"></img>
+        <section id="portfolio" class="flex-container-project-images">
+            <img class="flex-item-3" src="/art1.png" alt="Art Piece 1"></img>
+            <br/>
+            <img class="flex-item-3" src="/art2.jpeg" alt="Art Piece 2"></img>
+            <br/>
+            <img class="flex-item-3" src="/art3.jpeg" alt="Art Piece 3"></img>
         </section>
 
     <div class="footer" >
