@@ -43,11 +43,17 @@ const Project = () => {
           Join our premint <a href="https://www.premint.xyz/Fallenrealms/" target="_blank">here</a> </p>
     </section>
         <section id="portfolio" class="flex-container-project-images">
-            <img class="flex-item-3" src="/art1.png" alt="Art Piece 1"></img>
-            <br/>
-            <img class="flex-item-3" src="/art2.jpeg" alt="Art Piece 2"></img>
-            <br/>
-            <img class="flex-item-3" src="/art3.jpeg" alt="Art Piece 3"></img>
+            <img class="flex-item-3" src="/gallery1.jpeg" alt="Art Piece 1"></img>
+
+            <img class="flex-item-3" src="/gallery2.png" alt="Art Piece 2"></img>
+
+            <img class="flex-item-3" src="/gallery3.png" alt="Art Piece 3"></img>
+
+            <img class="flex-item-3" src="/gallery4.png" alt="Art Piece 4"></img>
+
+            <img class="flex-item-3" src="/gallery5.png" alt="Art Piece 5"></img>
+
+            <img class="flex-item-3" src="/gallery6.png" alt="Art Piece 6"></img>
         </section>
 
     <div class="footer" >
