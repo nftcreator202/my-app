@@ -21,7 +21,7 @@ const Home = () => {
     </div>
 
     <div>
-    <img class="flex-item" src="https://nftstorage.link/ipfs/bafybeibdv52ahvcwb6xzz7wqelhwutkmvfh2j2pcarqrjetomjvgovh4d4" alt="Art Image"></img>
+    <img class="flex-item" src="/back_img.png" alt="Art Image"></img>
     </div>
 
     <section id="aboutme" class="flex-container-2">
@@ -30,11 +30,11 @@ const Home = () => {
         <p class="art-info">Ancient Abstract Folk Art coming to the modern era</p>
     </section>
         <section id="portfolio" class="flex-container-3">
-            <img class="flex-item-3" src="https://nftstorage.link/ipfs/bafybeicdpdrj3sg7jhcungwrfnqkefdbb3betoaivv353gafvfzp2sit3e" alt="Art Piece 1"></img>
+            <img class="flex-item-3" src="/art1.png" alt="Art Piece 1"></img>
             <br/>
-            <img class="flex-item-3" src="https://nftstorage.link/ipfs/bafkreifzzipvo6glpwpddf4mpbuuos37hy4ibvos72qeovspfo6ozztit4" alt="Art Piece 2"></img>
+            <img class="flex-item-3" src="/art2.jpeg" alt="Art Piece 2"></img>
             <br/>
-            <img class="flex-item-3" src="https://nftstorage.link/ipfs/bafkreidw5j2sqavxr6mhcifsnzcu6xr2lmqp6kpvauvgs6cb75bzp2f4ri" alt="Art Piece 3"></img>
+            <img class="flex-item-3" src="/art3.jpeg" alt="Art Piece 3"></img>
         </section>
 
     <div class="footer" >

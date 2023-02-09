@@ -178,15 +178,6 @@
         margin-top: 40px;
     }
 
-    .flex-item {
-      width: 400px;
-      height: 380px;
-      color: white;
-      font-weight: bold;
-      font-size: 3em;
-      text-align: center;
-    }
-
     .aboutme{
      margin-left: 12%;
      }
@@ -272,23 +263,27 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
+    .toolbar {
+      height: 60px;
+    }
   .project_toolbar {
     padding-left: 50%;
     font-size: 15px;
   }
 
   .artist_toolbar {
-    padding-left: 25px;
+    padding-left: 15px;
     font-size: 15px;
   }
   .toolbar #twitter-logo {
-    padding-right : 7%;
+    padding-right : 2%;
     height: 40px;
     margin: 0 8px;
   }
 
     .flex-item {
-      width: 425px;
+    padding-top:60px;
+      width: 375px;
       height: auto;
     }
     .footer {
@@ -305,8 +300,8 @@ a {
     }
 
     .font-header {
-      font-size: 2em;
-      margin-block-start: 50px;
+      font-size: 1.8em;
+      margin-block-start: 30px;
       margin-block-end: 0px;
     }
 
@@ -317,7 +312,7 @@ a {
     }
 
     .artist-info {
-      font-size: 1em;
+      font-size: 0.9em;
       margin-block-start: 5px;
     }
 
@@ -334,17 +329,15 @@ a {
     .flex-container-3 {
       flex-flow: column;
       justify-content: space-evenly;
-      padding-left: 70px;
-      padding-right: 100px;
+      padding-left: 40px;
+      padding-right: 40px;
       padding-top:50px;
       padding-bottom: 50px;
     }
 
     .title_fallen {
-      font-size: 20px;
+      font-size: 18px;
       margin-left : 18px;
       font-family: fantasy;
     }
-
-
 }
