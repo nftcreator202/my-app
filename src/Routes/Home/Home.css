@@ -310,7 +310,7 @@ a {
     }
 
     .twitter-txt {
-     padding-left : 75px;
+     padding-left : 45px;
     }
 
     .font-header {
@@ -384,7 +384,9 @@ a {
     }
 
     .artist-page-info {
-      width: 375px;
+      padding-left: 35px;
+      padding-right: 10px;
+      width: 305px;
       height: 170px;
       padding-top: 0px;
       font-size: 1.1em;
