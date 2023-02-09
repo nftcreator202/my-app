@@ -24,21 +24,9 @@ const Project = () => {
         <img class="artist-flex-item img-top" src="https://nftstorage.link/ipfs/bafkreicubaoqbeyr4cpz7ibaoyzhgpuky75akm6zyyah5mi2zemw5z7sz4" alt="Flower"></img>
         <div class="artist-flex-item">
             <p class="artist-page-info">
-            Hello. I am 34 years old European artist, Emmanuel Pallassi Jr.
-            I consider Ammy Phillips, the famous American folk artist, as my mentor and I've learned from his style alot.
-            <br/>
-            <br/>
-            I am an IRL folk abstract artist and painter from 5 years. All my creations are inspired by God.
-            My style is based upon the ancient primitive civilized society.
-            <br/>
-            <br/>
-            At the young age of 23, I put up adverts to paint people’s portraits.
-            After the enhancement of my skills, I finally started the folk art at the age of 29.
-            I mixed up the folk and abstract arts to further revive the beauty of my creations.
-            <br/>
-            <br/>
-            I am coming to web3 with my limited collection of folk abstract art.
-            I want to be praised for my art but not for who I am.
+            Hello. I am Emmanuel Pallassi Jr., a folk artist and engineer from Europe.
+            I am coming to web3 with my limited collection made by mixing my folk art
+            style with abstract art style of AI to create these adorable pieces.
             </p>
         </div>
     </section>
