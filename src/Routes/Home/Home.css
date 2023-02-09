@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css?family=MedievalSharp&display=swap');
+
 .toolbar {
   position: absolute;
   top: 0;
@@ -16,14 +19,14 @@
 
 .project_toolbar {
   padding-left: 900px;
-  font-family: fantasy;
+  font-family: MedievalSharp;
   font-weight: bold;
   font-size: 20px;
 }
 
 .artist_toolbar {
   padding-left: 50px;
-  font-family: fantasy;
+  font-family: MedievalSharp;
   font-weight: bold;
   font-size: 20px;
 }
@@ -32,7 +35,7 @@
   font-weight: bold;
   font-size: 30px;
   margin-left : 50px;
-  font-family: fantasy;
+  font-family: MedievalSharp;
 }
 
 .toolbar img {
@@ -60,8 +63,8 @@
   font-size: 5em;
   font-weight: bold;
   margin-block-start: 100px;
-  margin-block-end: 0px;
-  font-family:fantasy;
+  margin-block-end: 30px;
+  font-family:MedievalSharp;
   color:#5C2416;
 }
 
@@ -245,7 +248,7 @@ a {
   font-weight: normal;
   text-align: center;
   margin-block-end: -500px;
-  font-family: fantasy;
+  font-family: MedievalSharp;
   color: #5C2416;
   padding-bottom:500px;
 }
@@ -273,7 +276,7 @@ a {
   font-size: 1.4em;
   font-weight: bold;
   text-align: center;
-  font-family: fantasy;
+  font-family: MedievalSharp;
   color: #5C2416;
 }
 
@@ -370,7 +373,7 @@ a {
     .title_fallen {
       font-size: 18px;
       margin-left : 18px;
-      font-family: fantasy;
+      font-family: MedievalSharp;
     }
 
     .project-info {
