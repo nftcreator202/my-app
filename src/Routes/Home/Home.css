@@ -286,16 +286,16 @@ a {
       width: auto;
     }
   .project_toolbar {
-    padding-left: 40%;
+    padding-left: 30%;
     font-size: 15px;
   }
 
   .artist_toolbar {
-    padding-left: 5%;
+    padding-left: 7%;
     font-size: 15px;
   }
   .toolbar #twitter-logo {
-    padding-right: 2%;
+    padding-right: 0%;
     height: 40px;
     margin: 0 3px;
   }
