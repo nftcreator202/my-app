@@ -279,25 +279,26 @@ a {
 @media only screen and (max-width: 768px) {
     .toolbar {
       height: 60px;
+      width: auto;
     }
   .project_toolbar {
-    padding-left: 50%;
+    padding-left: 40%;
     font-size: 15px;
   }
 
   .artist_toolbar {
-    padding-left: 15px;
+    padding-left: 5px;
     font-size: 15px;
   }
   .toolbar #twitter-logo {
-    padding-right : 2%;
+    padding-right: 2px;
     height: 40px;
-    margin: 0 8px;
+    margin: 0 3px;
   }
 
     .flex-item {
     padding-top:60px;
-      width: 375px;
+      width: 320px;
       height: auto;
     }
     .footer {
@@ -310,7 +311,8 @@ a {
     }
 
     .twitter-txt {
-     padding-left : 45px;
+     padding-left : 25px;
+     font-size: 15px;
     }
 
     .font-header {
@@ -343,8 +345,8 @@ a {
     .flex-container-3 {
       flex-flow: column;
       justify-content: space-evenly;
-      padding-left: 40px;
-      padding-right: 40px;
+      padding-left: 10px;
+      padding-right: 10px;
       padding-top:50px;
       padding-bottom: 50px;
     }
@@ -352,10 +354,10 @@ a {
     .flex-container-project-images {
       flex-flow: column;
       justify-content: space-evenly;
-      padding-top: 200px;
+      padding-top: 300px;
       padding-bottom: 50px;
-      padding-left: 40px;
-      padding-right: 40px;
+      padding-left: 10px;
+      padding-right: 10px;
     }
 
     .title_fallen {
@@ -377,23 +379,29 @@ a {
     }
 
     .artist-flex-item {
-      padding-top: 80px;
-      width: 375px;
+      padding-top: 100px;
+      width: 320px;
       height: 400px;
       padding-bottom: 20px;
+
     }
 
     .artist-page-info {
-      padding-left: 35px;
+      padding-left: 20px;
       padding-right: 10px;
-      width: 305px;
+      width: 275px;
       height: 170px;
       padding-top: 0px;
       font-size: 1.1em;
-
+      padding-bottom: 50px;
     }
 
     .footer_artist_page {
       height: 80px;
+    }
+
+    .footer {
+      height: 70px;
+
     }
 }
