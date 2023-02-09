@@ -220,6 +220,21 @@ a {
 .spacer {
   flex: 1;
 }
+
+.project_toolbar {
+  padding-left: 900px;
+  font-family: fantasy;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.artist_toolbar {
+  padding-left: 50px;
+  font-family: fantasy;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 .toolbar {
   position: absolute;
   top: 0;
@@ -236,7 +251,7 @@ a {
   font-weight: bold;
   font-size: 30px;
   margin-left : 50px;
-  font-family: cursive;
+  font-family: fantasy;
 }
 
 .toolbar img {
@@ -269,4 +284,43 @@ a {
  text-align: center;
  padding-left : 600px;
 
+}
+
+
+.project-info {
+  margin-left:300px;
+  margin-right: 300px;
+  padding-top :150px;
+  font-size: 1.5em;
+  font-weight: normal;
+  text-align: center;
+  height: 60px;
+  margin-block-start: -10px;
+  font-family: fantasy;
+  color: #5C2416;
+  padding-bottom:500px;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.artist-flex-item {
+  padding-top: 105px;
+  width: 500px;
+  height: 500px;
+  padding-bottom: 30px;
+}
+.artist-page-info {
+  padding-top: 20px;
+  font-size: 1.1em;
+  font-weight: normal;
+  text-align: center;
+  font-family: fantasy;
+  color: #5C2416;
 }
