@@ -236,14 +236,13 @@ a {
 
 
 .project-info {
-  margin-left:300px;
+  margin-left: 300px;
   margin-right: 300px;
-  padding-top :150px;
+  padding-top : 150px;
   font-size: 1.5em;
   font-weight: normal;
   text-align: center;
-  height: 60px;
-  margin-block-start: -10px;
+  margin-block-end: -500px;
   font-family: fantasy;
   color: #5C2416;
   padding-bottom:500px;
@@ -287,18 +286,18 @@ a {
   }
 
   .artist_toolbar {
-    padding-left: 5px;
+    padding-left: 5%;
     font-size: 15px;
   }
   .toolbar #twitter-logo {
-    padding-right: 2px;
+    padding-right: 2%;
     height: 40px;
     margin: 0 3px;
   }
 
     .flex-item {
     padding-top:60px;
-      width: 320px;
+      width: 100%;
       height: auto;
     }
     .footer {
@@ -311,8 +310,10 @@ a {
     }
 
     .twitter-txt {
-     padding-left : 25px;
-     font-size: 15px;
+      width: 80%;
+      padding-left: 10%;
+      padding-right: 10%;
+      font-size: 15px;
     }
 
     .font-header {
@@ -339,14 +340,16 @@ a {
     }
 
     .flex-item-3 {
-      height: 100%;
+      height: 10%;
+      width:80%;
+      padding-left:10%;
     }
 
     .flex-container-3 {
       flex-flow: column;
       justify-content: space-evenly;
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: 10%;
+      padding-right: 10%;
       padding-top:50px;
       padding-bottom: 50px;
     }
@@ -354,10 +357,12 @@ a {
     .flex-container-project-images {
       flex-flow: column;
       justify-content: space-evenly;
-      padding-top: 300px;
+      padding-top: 10%;
       padding-bottom: 50px;
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: 10%;
+      padding-right: 10%;
+      width: 80%;
+      height: 10%;
     }
 
     .title_fallen {
@@ -367,29 +372,30 @@ a {
     }
 
     .project-info {
-      margin-left: 50px;
-      margin-right: 50px;
+      margin-left: 10%;
+      margin-right: 10%;
       padding-top: 110px;
+      margin-block-end: -510px;
       font-size: 1em;
     }
 
     .flex-container {
       flex-flow: column;
-      height:700px;
+      height: 700px;
     }
 
     .artist-flex-item {
       padding-top: 100px;
-      width: 320px;
+      width: 100%;
       height: 400px;
       padding-bottom: 20px;
 
     }
 
     .artist-page-info {
-      padding-left: 20px;
-      padding-right: 10px;
-      width: 275px;
+      padding-left: 10%;
+      padding-right: 10%;
+      width: 80%;
       height: 170px;
       padding-top: 0px;
       font-size: 1.1em;
