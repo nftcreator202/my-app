@@ -41,6 +41,7 @@
   color: #38593c;
   font-weight: bold;
   font-family: MedievalSharp;
+  visibility: none;
 }
 
 .details-item-3 {
@@ -126,6 +127,7 @@
   .details-item-2 {
     padding-left: 20px;
     font-size: 25px;
+    visibility: none;
   }
 
   .details-item-3 {
