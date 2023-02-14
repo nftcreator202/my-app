@@ -18,13 +18,20 @@
 }
 
 .project_toolbar {
-  padding-left: 900px;
+  padding-left: 830px;
   font-family: MedievalSharp;
   font-weight: bold;
   font-size: 20px;
 }
 
 .artist_toolbar {
+  padding-left: 50px;
+  font-family: MedievalSharp;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.mint_toolbar {
   padding-left: 50px;
   font-family: MedievalSharp;
   font-weight: bold;
@@ -294,6 +301,11 @@ a {
     padding-left: 7%;
     font-size: 15px;
   }
+
+    .mint_toolbar {
+      padding-left: 7%;
+      font-size: 15px;
+    }
   .toolbar #twitter-logo {
     padding-right: 0%;
     height: 40px;

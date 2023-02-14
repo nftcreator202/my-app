@@ -1,11 +1,11 @@
 {
   "contractName": "Fallen Realms",
   "nftName": "Fallen Realms",
-  "nftSymbol": "FAR",
+  "nftSymbol": "FLAR",
   "maxSupply": 555,
   "saleType": {
-    "allowlistSale": { "mintPrice": ""},
-    "publicSale": { "mintPrice": ""}
+    "allowlistSale": { "mintPrice": "0.02"},
+    "publicSale": { "mintPrice": "0.02"}
   },
   "contractAddress" : "",
   "contractAddresses": {

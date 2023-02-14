@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { ethers, BigNumber } from "ethers";
 import { MerkleProof, VerifyWallet } from "./MerkleProof";
-import { ToastContainer, toast } from "react-toastify";
-
 import contractConfig from '../config/contract-config.json';
+
 import contractABI from '../config/abi.json';
 
 export const Web3Context = React.createContext();
@@ -29,10 +28,9 @@ export const Web3Provider = ({ children }) => {
   const isConnected = Boolean(currentAccount[0]);
   const [saleState, setSaleState] = useState(0);
   const [proof, setProof] = useState(false);
-  const toastId = React.useRef(null);
 
   useEffect(() => {
-    // MerkleProof();
+     MerkleProof();
   });
 
   // Multiple getter functions
@@ -83,32 +81,9 @@ export const Web3Provider = ({ children }) => {
       const ethereumChainId = "0x1";
       if (chainId !== ethereumChainId) {
         // "Collection is only available on Ethereum mainnet, Please switch to mainnet"
-        toast.warning(
-          "Collection is only available on Ethereum Mainnet, Please switch to Mainnet",
-          {
-            position: "bottom-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "light",
-          }
-        );
         return;
       }
     } catch (error) {
-      toast.warning("No ethereum object, please install metamask on pc", {
-        position: "bottom-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-      });
       console.log(error);
       throw new Error("No ethereum object.", error);
     }
@@ -126,7 +101,7 @@ export const Web3Provider = ({ children }) => {
     let formattedBalance = ethers.utils.formatEther(balanceResponse);
     let balance = formattedBalance * 1;
 
-    let totalCost = mintAmount * 0;
+    let totalCost = mintAmount * 0.02;
     let x = totalCost.toFixed(4);
     let value = x.toString();
 
@@ -135,54 +110,13 @@ export const Web3Provider = ({ children }) => {
         value: ethers.utils.parseEther(value, "ether"),
       });
 
-      toastId.current = toast.loading("Mint in Progress");
-
       try {
         await response.wait();
-        toast.dismiss(toastId.current);
-        toast.success(
-          mintAmount <= 1
-            ? `Mint successful, ${mintAmount} Chest has entered the blockchain`
-            : `Mint successful, ${mintAmount} Chests have entered the blockchain`,
-          {
-            position: "top-center",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "light",
-            delay: 1000,
-          }
-        );
       } catch (error) {
-        toast.dismiss(toastId.current);
-        toast.error("Error during Mint", {
-          position: "top-center",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "light",
-          delay: 1000,
-        });
         console.log(error);
       }
       console.log("Response: ", response);
     } else {
-      toast.error("Not enough peperino coins you brokie", {
-        position: "bottom-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-      });
     }
   };
 
@@ -193,49 +127,16 @@ export const Web3Provider = ({ children }) => {
         method: "eth_chainId",
       });
       if (chainId !== ethereumChainId) {
-        toast.error(
-          "Collection can only be minted on Ethereum Mainnet, please switch to Mainnet",
-          {
-            position: "bottom-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "light",
-          }
-        );
         // Collection is in test mode on Goerli testnet(switch dapp to mainnet)
         return;
       }
       try {
         publicCheckout();
       } catch (error) {
-        toast.error("Minting error check Metamask in console", {
-          position: "bottom-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "light",
-        });
         console.log(error);
         throw new Error("Error: ", error);
       }
     } else {
-      toast.info("Please connect wallet to mint", {
-        position: "bottom-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-      });
     }
   };
 
@@ -246,7 +147,7 @@ export const Web3Provider = ({ children }) => {
       method: "eth_requestAccounts",
     });
     const proof = MerkleProof(accounts[0]);
-    let totalCost = mintAmount * 0;
+    let totalCost = mintAmount * 0.02;
     let x = totalCost.toFixed(3);
     let value = x.toString();
 
@@ -258,42 +159,11 @@ export const Web3Provider = ({ children }) => {
       }
     );
 
-    toastId.current = toast.loading("Mint in Progress");
-
     try {
       await response.wait();
-      toast.dismiss(toastId.current);
-      toast.success(
-        mintAmount <= 1
-        ? `Mint successful, ${mintAmount} Chest has been minted.`
-        : `Mint successful, ${mintAmount} Chests have been minted.`,
-          {
-            position: "top-center",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "light",
-            delay: 1000,
-          }
-      );
     } catch (error) {
-        toast.dismiss(toastId.current);
-        toast.error("Error during Mint", {
-              position: "top-center",
-              autoClose: 5000,
-              hideProgressBar: false,
-              closeOnClick: true,
-              pauseOnHover: true,
-              draggable: true,
-              progress: undefined,
-              theme: "light",
-              delay: 1000,
-            });
-            console.log(error);
-        }
+        console.log(error);
+    }
     console.log("Response: ", response);
   };
 
@@ -304,19 +174,6 @@ export const Web3Provider = ({ children }) => {
         method: "eth_chainId",
       });
       if (chainId !== ethereumChainId) {
-        toast.error(
-          "Collection can only be minted on Ethereum Mainnet, please switch to Mainnet",
-          {
-            position: "bottom-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "light",
-          }
-        );
         // "Collection can only be minted on Ethereum mainnet"
         return;
       }
@@ -324,28 +181,10 @@ export const Web3Provider = ({ children }) => {
       try {
         whitelistCheckout();
       } catch (error) {
-        toast.error("Minting error check Metamask", {
-          position: "bottom-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "light",
-        });
+           console.log(error);
       }
     } else {
-      toast.info("Please connect wallet to mint", {
-        position: "bottom-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-      });
+       console.log("Connect to mint");
     }
   };
 
@@ -370,21 +209,6 @@ export const Web3Provider = ({ children }) => {
     }
   };
 
-  const handleDecrement = () => {
-    if (mintAmount <= 1) return;
-    setMintAmount(mintAmount - 1);
-  };
-
-  const handleIncrement = () => {
-    if (mintAmount >= 2) return;
-    setMintAmount(mintAmount + 1);
-  };
-
-  const handleIncrementWl = () => {
-    if (mintAmount >= 2) return;
-    setMintAmount(mintAmount + 1);
-  };
-
   return (
     <Web3Context.Provider
       value={{
@@ -397,9 +221,6 @@ export const Web3Provider = ({ children }) => {
         isConnected,
         whitelistMint,
         checkWalletConnection,
-        handleDecrement,
-        handleIncrement,
-        handleIncrementWl,
         setTotalSupply,
         totalSupply,
         getSupply,
@@ -411,17 +232,6 @@ export const Web3Provider = ({ children }) => {
       }}
     >
       {children}
-      <ToastContainer
-        position="top-center"
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
-      />
     </Web3Context.Provider>
   );
 };

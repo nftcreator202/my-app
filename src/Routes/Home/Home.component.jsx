@@ -11,6 +11,7 @@ const Home = () => {
       <div class="spacer">
         <a class="project_toolbar" href="/project">Project</a>
         <a class="artist_toolbar" href="/artist">Artist</a>
+        <a class="mint_toolbar" href="/mint">Mint</a>
       </div>
       <a aria-label="Fallen Realms" target="_blank" rel="noopener" href="https://twitter.com/FallenRealmsNFT" title="Twitter">
         <svg id="twitter-logo" height="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
