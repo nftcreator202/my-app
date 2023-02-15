@@ -46,12 +46,6 @@ const Mint = () => {
         <div className="details">
              <span className="details-item"> Minted Supply: &nbsp;&nbsp;    {totalSupply} / 555 </span>
              <span className="details-price"> Price: &nbsp;&nbsp;    0.02E </span>
-             {isConnected && proof ? (
-                <span className="details-item-2"> You are whitelisted !!! </span>
-             ) : ""}
-             {isConnected && !proof ? (
-                 <span className="details-item-3"> You are not whitelisted !!! </span>
-             ) : ""}
 
          {isConnected && proof? (
             <button className="mint-button" onClick={mint}> Mint Now</button>
@@ -59,7 +53,7 @@ const Mint = () => {
           ) : ""}
 
          { !isConnected ?  (
-            <button className="connect-wallet-button" onClick={connectWallet}> Connect Wallet </button>
+            <button className="connect-wallet-button" onClick={connectWallet} disabled> Connect Wallet </button>
             )  :" "}
  </div>
      </div>

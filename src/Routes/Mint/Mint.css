@@ -41,7 +41,7 @@
   color: #38593c;
   font-weight: bold;
   font-family: MedievalSharp;
-  visibility: none;
+  visibility: hidden;
 }
 
 .details-item-3 {
@@ -53,7 +53,7 @@
   color: red;
   font-weight: bold;
   font-family: MedievalSharp;
-    visibility: none;
+      visibility: hidden;
 }
 
 .mint-button {
@@ -128,13 +128,13 @@
   .details-item-2 {
     padding-left: 20px;
     font-size: 25px;
-    visibility: none;
+    visibility: hidden;
   }
 
   .details-item-3 {
     padding-left: 20px;
     font-size: 23px;
-      visibility: none;
+    visibility: hidden;
    }
 
   .connect-wallet-button {
@@ -142,6 +142,7 @@
       margin-left: 22%;
       font-size: 18px;
       width: 176px;
+      visibility: hidden;
   }
 
     .mint-button {
@@ -149,6 +150,6 @@
       margin-left: 22%;
       font-size: 18px;
       width: 176px;
-      visibility: none;
+      visibility: hidden;
     }
 }
