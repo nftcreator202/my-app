@@ -6,7 +6,6 @@ import addresses  from "../config/Whitelist.json";
 
 let merkleTree: MerkleTree;
 
-
 function getMerkleTree() {
    if (!merkleTree) {
      const leaves = addresses.map((address) => keccak256(address));
@@ -20,7 +19,7 @@ export const MerkleProof = (address) => {
 
   const tree = getMerkleTree();
   const buf2hex = (x) => "0x" + x.toString("hex");
-  console.log("Root ", buf2hex(tree.getRoot()))
+  console.log("Root ", buf2hex(tree.getRoot()));
   const leaf = keccak256(address);
   const proof = tree.getProof(leaf).map((x) => buf2hex(x.data));
 
@@ -30,7 +29,7 @@ export const MerkleProof = (address) => {
 export const VerifyWallet = (address) => {
   window.Buffer = window.Buffer || Buffer;
 
-  const tree = getMerkleTree()
+  const tree = getMerkleTree();
   const buf2hex = (x) => "0x" + x.toString("hex");
   const root = buf2hex(tree.getRoot());
 
