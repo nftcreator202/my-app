@@ -1,17 +1,17 @@
 {
   "contractName": "Fallen Realms",
   "nftName": "Fallen Realms",
-  "nftSymbol": "FLAR",
+  "nftSymbol": "FALRM",
   "maxSupply": 555,
   "saleType": {
     "allowlistSale": { "mintPrice": "0.02"},
     "publicSale": { "mintPrice": "0.02"}
   },
-  "contractAddress" : "",
+  "contractAddress" : "0x8A056cf90ef61F12db022876063e8A431Ea32CF6",
   "contractAddresses": {
     "1337": [],
     "4": [],
-    "1": [""]
+    "1": ["0x8A056cf90ef61F12db022876063e8A431Ea32CF6"]
   },
   "customErrors": {
     "WL_SALE_NOT_ACTIVE": "Whitelist mint is not live or over!",
@@ -25,7 +25,7 @@
   "gasToken": "ETH",
   "openSeaURL": "https://opensea.io/collection/",
   "twitterURL": "https://www.twitter.com/FallenRealmsNFT",
-  "etherscanURL": "https://www.etherscan.io/address/",
+  "etherscanURL": "https://www.etherscan.io/address/0x8A056cf90ef61F12db022876063e8A431Ea32CF6",
   "chainIDConfig": "1",
   "chainName": "MainNet"
 }
