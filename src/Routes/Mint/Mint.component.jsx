@@ -53,7 +53,7 @@ const Mint = () => {
                  <span className="details-item-3"> You are not whitelisted !!! </span>
              ) : ""}
          {isConnected && proof? (
-            <button className="mint-button" onClick={mint} disabled> Mint Now</button>
+            <button className="mint-button" onClick={mint} > Mint Now</button>
 
           ) : ""}
 
