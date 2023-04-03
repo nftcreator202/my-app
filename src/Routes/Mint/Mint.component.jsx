@@ -38,7 +38,7 @@ const Mint = () => {
            <button className="plus-btn" onClick={handleIncrement}>+</button>
 
             <br/>
-           <button className="mint-button" onClick={mint} >Mint Now</button>
+           <button className="mint-button" onClick={mint} >Mint</button>
  </div>
 
           ) : ""}
