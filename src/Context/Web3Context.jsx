@@ -101,7 +101,7 @@ export const Web3Provider = ({ children }) => {
     let formattedBalance = ethers.utils.formatEther(balanceResponse);
     let balance = formattedBalance * 1;
 
-    let totalCost = mintAmount * 0.02;
+    let totalCost = mintAmount * 0.016;
     let x = totalCost.toFixed(4);
     let value = x.toString();
 
@@ -209,6 +209,16 @@ export const Web3Provider = ({ children }) => {
     }
   };
 
+  const handleDecrement = () => {
+      if (mintAmount <= 1) return;
+      setMintAmount(mintAmount - 1);
+  };
+
+  const handleIncrement = () => {
+    if (mintAmount >= 2) return;
+    setMintAmount(mintAmount + 1);
+  };
+
   return (
     <Web3Context.Provider
       value={{
@@ -229,6 +239,8 @@ export const Web3Provider = ({ children }) => {
         publicMint,
         isValid,
         proof,
+        handleDecrement,
+        handleIncrement,
       }}
     >
       {children}

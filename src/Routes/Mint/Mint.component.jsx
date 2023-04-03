@@ -14,6 +14,9 @@ const Mint = () => {
     mint,
     connectWallet,
     currentAccount,
+    handleIncrement,
+    handleDecrement,
+    mintAmount,
     proof
   } = useContext(Web3Context);
 
@@ -27,23 +30,34 @@ const Mint = () => {
         <img className="mint-bg" src="/rr_mint_bg.gif" alt="" />
 
         <div className="details">
-             {isConnected && proof ? (
-                <span className="details-item-2"> You can mint !!! </span>
-             ) : ""}
-             {isConnected && !proof ? (
-                 <span className="details-item-3"> You are not in minting list !!! </span>
-             ) : ""}
 
          {isConnected && proof? (
-            <button className="mint-button" onClick={mint} >Mint Now</button>
+           <div>
+           <button className="minus-btn" onClick={handleDecrement}>-</button>
+           <span className="mint-amt">{mintAmount}</span>
+           <button className="plus-btn" onClick={handleIncrement}>+</button>
+
+            <br/>
+           <button className="mint-button" onClick={mint} >Mint Now</button>
+ </div>
 
           ) : ""}
 
          { !isConnected ?  (
             <button className="connect-wallet-button" onClick={connectWallet}> Connect Wallet </button>
             )  :" "}
- </div>
-     </div>
+
+         {isConnected && proof ? (
+            <span className="details-item-2"> You can mint !!! </span>
+         ) : ""}
+         {isConnected && !proof ? (
+             <span className="details-item-3"> You are not in minting list !!! </span>
+         ) : ""}
+    </div>
+
+
+
+   </div>
 
   );
 };
