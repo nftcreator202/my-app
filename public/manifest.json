@@ -1,19 +1,19 @@
 {
-  "short_name": "Fallen Realms",
-  "name": "Fallen Realms",
+  "short_name": "Royal Roiers",
+  "name": "Royal Roiers",
   "icons": [
     {
-      "src": "fallen3.jpeg",
+      "src": "rr_mint_bg.gif",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "fallen3.jpeg",
+      "src": "rr_mint_bg.gif",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "fallen3.jpeg",
+      "src": "rr_mint_bg.gif",
       "type": "image/png",
       "sizes": "512x512"
     }

@@ -1,17 +1,17 @@
 {
-  "contractName": "Fallen Realms",
-  "nftName": "Fallen Realms",
-  "nftSymbol": "FALRM",
-  "maxSupply": 555,
+  "contractName": "Royal Roiers",
+  "nftName": "Royal Roiers",
+  "nftSymbol": "RR",
+  "maxSupply": 1550,
   "saleType": {
-    "allowlistSale": { "mintPrice": "0.02"},
-    "publicSale": { "mintPrice": "0.02"}
+    "allowlistSale": { "mintPrice": "0.0125"},
+    "publicSale": { "mintPrice": "0.016"}
   },
-  "contractAddress" : "0x8A056cf90ef61F12db022876063e8A431Ea32CF6",
+  "contractAddress" : "",
   "contractAddresses": {
     "1337": [],
     "4": [],
-    "1": ["0x8A056cf90ef61F12db022876063e8A431Ea32CF6"]
+    "1": [""]
   },
   "customErrors": {
     "WL_SALE_NOT_ACTIVE": "Whitelist mint is not live or over!",
@@ -24,8 +24,8 @@
   },
   "gasToken": "ETH",
   "openSeaURL": "https://opensea.io/collection/",
-  "twitterURL": "https://www.twitter.com/FallenRealmsNFT",
-  "etherscanURL": "https://www.etherscan.io/address/0x8A056cf90ef61F12db022876063e8A431Ea32CF6",
+  "twitterURL": "https://www.twitter.com/",
+  "etherscanURL": "https://www.etherscan.io/address/",
   "chainIDConfig": "1",
   "chainName": "MainNet"
 }
