@@ -153,6 +153,7 @@ export const Web3Provider = ({ children }) => {
 
     const response = await contract.wlMint(
       proof,
+      BigNumber.from(mintAmount),
       {
         value: ethers.utils.parseEther(value, "ether"),
       }
