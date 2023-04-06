@@ -147,11 +147,37 @@ export const Web3Provider = ({ children }) => {
       method: "eth_requestAccounts",
     });
     const proof = MerkleProof(accounts[0]);
-    let totalCost = mintAmount * 0.0125;
+    let totalCost = mintAmount * 0.016;
     let x = totalCost.toFixed(3);
     let value = x.toString();
 
     const response = await contract.wlMint(
+      proof,
+      {
+        value: ethers.utils.parseEther(value, "ether"),
+      }
+    );
+
+    try {
+      await response.wait();
+    } catch (error) {
+        console.log(error);
+    }
+    console.log("Response: ", response);
+  };
+
+  const ccCheckout = async () => {
+    const contract = initContract();
+    const provider = new ethers.providers.Web3Provider(window.ethereum);
+    const accounts = await window.ethereum.request({
+      method: "eth_requestAccounts",
+    });
+    const proof = MerkleProof(accounts[0]);
+    let totalCost = mintAmount * 0.0125;
+    let x = totalCost.toFixed(3);
+    let value = x.toString();
+
+    const response = await contract.ccMint(
       proof,
       BigNumber.from(mintAmount),
       {
@@ -166,7 +192,6 @@ export const Web3Provider = ({ children }) => {
     }
     console.log("Response: ", response);
   };
-
   const whitelistMint = async () => {
     if (isConnected) {
       const ethereumChainId = "0x1";
@@ -188,15 +213,40 @@ export const Web3Provider = ({ children }) => {
     }
   };
 
+    const ccMint = async () => {
+      if (isConnected) {
+        const ethereumChainId = "0x1";
+        let chainId = await window.ethereum.request({
+          method: "eth_chainId",
+        });
+        if (chainId !== ethereumChainId) {
+          // "Collection can only be minted on Ethereum mainnet"
+          return;
+        }
+
+        try {
+          ccCheckout();
+        } catch (error) {
+             console.log(error);
+        }
+      } else {
+         console.log("Connect to mint");
+      }
+    };
+
   const mint = async () => {
 
      if (saleState === 0) return;
 
      if (saleState === 1) {
-        whitelistMint();
+        ccMint();
      }
 
-     if (saleState === 2) {
+     if( saleState === 2) {
+       whitelistMint();
+     }
+
+     if (saleState === 3) {
         publicMint();
      }
   }

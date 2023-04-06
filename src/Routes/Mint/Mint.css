@@ -1,68 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=MedievalSharp&display=swap');
 
-.details {
-    display: flex;
-    flex-flow: column;
-    position: relative;
-    margin-left: -80px;
-    margin-top: 80px;
-    padding-top: 150px;
-    text-align:center;
-    font-align: center;
+.mint-bg {
+ background-image: url("https://uploads-ssl.webflow.com/63d9567542233e5b587e126e/640cfab43ecaf85fc13f77ce_wall%20Corrected%201920x1080.gif");
+ position:absolute;
+ background-position: 50% 50%;
+ background-size: cover;
+ height:100%;
+ width: 100%;
 }
-
-.details-item {
-      padding-left: 80px;
-      font-size: 30px;
-      height: 10%;
-      width: 80%;
-      color: maroon;
-      font-weight: bold;
-      font-family: MedievalSharp;
-}
-
-.details-price {
-  margin-top: 30px;
-  padding-left: 80px;
-  font-size: 30px;
-  height: 10%;
-  width: 80%;
-  color: maroon;
-  font-weight: bold;
-  font-family: MedievalSharp;
-}
-
-.details-item-2 {
-  margin-top: 190px;
-  padding-left: 190px;
-  font-size: 30px;
-  height: 10%;
-  width: 80%;
-  color: #38593c;
-  font-weight: bold;
-  font-family: MedievalSharp;
-}
-
-.details-item-3 {
-  margin-top: 430px;
-  padding-left: 190px;
-  font-size: 30px;
-  height: 10%;
-  width: 80%;
-  color: red;
-  font-weight: bold;
-  font-family: MedievalSharp;
-}
-
 
 .connect-wallet-button {
-    margin-top : 200px;
-    margin-left: 47%;
+    margin-top: 38%;
+    margin-left: 43.2%;
     cursor: pointer;
     border: 4px solid #fff;
     color: white;
     font-size: 18px;
-    width: 176px;
+    width: 185px;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color:inherit;
@@ -70,16 +24,9 @@
     text-align: center;
 }
 
-
-.mint-bg {
- position:absolute;
- height:100%;
- width: 100%;
- }
-
 .minus-btn {
-    margin-top: 120px;
-    padding-left: 70px;
+    margin-top: 28%;
+    margin-left: 46%;
     color: white;
     width: 30px;
     padding-bottom: 10px;
@@ -97,7 +44,7 @@
 }
 
 .plus-btn {
-    padding-left: 20px;
+    padding-left: 26px;
     color: white;
     width: 30px;
     padding-top: 10px;
@@ -109,7 +56,8 @@
 }
 
 .mint-button {
-    margin-left: 5%;
+    margin-top: 6%;
+    margin-left: 44%;
     cursor: pointer;
     border: 4px solid #fff;
     color: white;
@@ -122,61 +70,119 @@
     text-align: center;
 }
 
+.mint-not-allowed {
+  display: inline-block;
+  margin-top : 40%;
+  margin-left: 36%;
+  font-size: 30px;
+  height: 10%;
+  width: 50%;
+  color: red;
+  font-weight: bold;
+  font-family: MedievalSharp;
+}
 
 
 @media only screen and (max-width: 768px) {
-
   .connect-wallet-button {
-      margin-top: 15px;
-      margin-left: 75%;
-      font-size: 10px;
-      width: 20%;
-  }
-
-  .mint-bg {
-   margin-top : -20px;
-   width: 100%;
-   height: 100%;
-  }
-
-  .details {
-      margin-left: 50px;
-      margin-top: 80px;
-      padding-top: 120px;
-      text-align:center;
-      font-align: center;
-  }
-
-  .details-item {
-    padding-left: 20px;
-    font-size: 23px;
-  }
-  .details-price {
-    padding-left: 20px;
-    font-size: 23px;
-  }
-
-  .details-item-2 {
-    padding-left: 20px;
-    font-size: 25px;
-  }
-
-  .details-item-3 {
-    padding-left: 20px;
-    font-size: 23px;
-   }
-
-  .connect-wallet-button {
-      margin-top : 70px;
-      margin-left: 22%;
+      margin-top : 57%;
+      margin-left: 39%;
       font-size: 18px;
-      width: 176px;
+      width: 160px;
   }
 
-    .mint-button {
-      margin-top : 70px;
-      margin-left: 22%;
+.minus-btn {
+  margin-top: 400px;
+  margin-left: 43%;
+}
+
+  .mint-button {
+      margin-top : 7%;
+      margin-left: 38.5%;
       font-size: 18px;
-      width: 176px;
+      width: 160px;
     }
+
+    .mint-not-allowed {
+      display: inline-block;
+      margin-top : 70%;
+      margin-left: 32%;
+      font-size: 23px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+  .connect-wallet-button {
+      margin-top : 430px;
+      margin-left: 30.5%;
+      font-size: 18px;
+      width: 160px;
+  }
+
+  .minus-btn {
+    margin-top: 300px;
+    margin-left: 37%;
+  }
+
+  .mint-button {
+      margin-top : 70px;
+      margin-left: 30.5%;
+      font-size: 18px;
+      width: 160px;
+    }
+        .mint-not-allowed {
+          display: inline-block;
+          margin-top : 100%;
+          margin-left: 32%;
+          font-size: 23px;
+        }
+}
+
+@media only screen and (max-width: 375px) {
+  .connect-wallet-button {
+      margin-top : 430px;
+      margin-left: 27.5%;
+      font-size: 18px;
+      width: 160px;
+  }
+
+  .minus-btn {
+    margin-top: 300px;
+    margin-left: 34%;
+  }
+
+  .mint-button {
+      margin-top : 70px;
+      margin-left: 27.5%;
+      font-size: 18px;
+      width: 160px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+  .connect-wallet-button {
+      margin-top : 430px;
+      margin-left: 24%;
+      font-size: 18px;
+      width: 160px;
+  }
+
+  .minus-btn {
+    margin-top: 300px;
+    margin-left: 34%;
+  }
+
+  .mint-button {
+      margin-top : 70px;
+      margin-left: 24%;
+      font-size: 18px;
+      width: 160px;
+    }
+
+.mint-not-allowed {
+  display: inline-block;
+  margin-top : 450px;
+  margin-left: 28%;
+  font-size: 23px;
+}
 }
