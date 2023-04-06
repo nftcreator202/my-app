@@ -82,6 +82,34 @@
   font-family: MedievalSharp;
 }
 
+@media only screen and (max-width: 1440px) {
+  .connect-wallet-button {
+      margin-top : 38%;
+      margin-left: 44%;
+      font-size: 18px;
+      width: 160px;
+  }
+
+.minus-btn {
+  margin-top: 27%;
+  margin-left: 46%;
+}
+
+  .mint-button {
+      margin-top : 7%;
+      margin-left: 44%;
+      font-size: 18px;
+      width: 160px;
+    }
+
+    .mint-not-allowed {
+      display: inline-block;
+      margin-top : 43%;
+      margin-left: 39%;
+      font-size: 23px;
+    }
+}
+
 @media only screen and (max-width: 1024px) {
   .connect-wallet-button {
       margin-top : 50%;
