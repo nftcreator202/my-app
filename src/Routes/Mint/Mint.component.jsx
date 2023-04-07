@@ -29,13 +29,17 @@ const Mint = () => {
      <div className="mint-bg">
         <div>
          {isConnected && proof? (
-           <div>
+         <div>
+           <div className="section-14">
            <button className="minus-btn" onClick={handleDecrement}>-</button>
            <span className="mint-amt">{mintAmount}</span>
            <button className="plus-btn" onClick={handleIncrement}>+</button>
+            </div>
 
-            <br/>
+
+            <div className="section-15">
            <button className="mint-button" onClick={mint} >Mint</button>
+            </div>
             </div>
 
           ) : ""}
@@ -45,7 +49,9 @@ const Mint = () => {
          ) : ""}
 
          { !isConnected ?  (
+            <div className="section-16">
             <button className="connect-wallet-button" onClick={connectWallet}> Connect Wallet </button>
+            </div>
             )  :" "}
 
     </div>
