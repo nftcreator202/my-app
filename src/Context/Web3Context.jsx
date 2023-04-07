@@ -56,9 +56,7 @@ export const Web3Provider = ({ children }) => {
   const getMintingStatus = async () => {
      const contract = initContract();
 
-     let response = (await contract.getSaleState());
-
-     setSaleState(response);
+     setSaleState(1);
     };
 
   // function to connect user wallet
@@ -193,6 +191,7 @@ export const Web3Provider = ({ children }) => {
     }
     console.log("Response: ", response);
   };
+
   const whitelistMint = async () => {
     if (isConnected) {
       const ethereumChainId = "0x1";

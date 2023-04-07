@@ -20,11 +20,6 @@ const Mint = () => {
     proof
   } = useContext(Web3Context);
 
-  useEffect(() => {
-    getSupply();
-    getMintingStatus();
-  });
-
   return (
      <div className="mint-bg">
         <div>

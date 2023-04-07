@@ -7,11 +7,11 @@
     "allowlistSale": { "mintPrice": "0.0125"},
     "publicSale": { "mintPrice": "0.016"}
   },
-  "contractAddress" : "",
+  "contractAddress" : "0x7880f8d469484f656fd539d4b91d73e4bcd8de62",
   "contractAddresses": {
     "1337": [],
     "4": [],
-    "1": [""]
+    "1": ["0x7880f8d469484f656fd539d4b91d73e4bcd8de62"]
   },
   "customErrors": {
     "WL_SALE_NOT_ACTIVE": "Whitelist mint is not live or over!",
