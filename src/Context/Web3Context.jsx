@@ -26,7 +26,7 @@ export const Web3Provider = ({ children }) => {
   const [currentAccount, setCurrentAccount] = useState([]);
   const [mintAmount, setMintAmount] = useState(1);
   const isConnected = Boolean(currentAccount[0]);
-  const [saleState, setSaleState] = useState(1);
+  const [saleState, setSaleState] = useState(2);
   const [proof, setProof] = useState(false);
 
   useEffect(() => {
@@ -265,7 +265,7 @@ export const Web3Provider = ({ children }) => {
   };
 
   const handleIncrement = () => {
-    if (mintAmount >= 2) return;
+    if (mintAmount >= 1) return;
     setMintAmount(mintAmount + 1);
   };
 
