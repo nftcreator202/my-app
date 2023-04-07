@@ -26,7 +26,7 @@ export const Web3Provider = ({ children }) => {
   const [currentAccount, setCurrentAccount] = useState([]);
   const [mintAmount, setMintAmount] = useState(1);
   const isConnected = Boolean(currentAccount[0]);
-  const [saleState, setSaleState] = useState(0);
+  const [saleState, setSaleState] = useState(1);
   const [proof, setProof] = useState(false);
 
   useEffect(() => {
