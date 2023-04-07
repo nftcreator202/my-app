@@ -40,7 +40,7 @@ const Mint = () => {
           ) : ""}
 
          {isConnected && !proof ? (
-             <span className="mint-not-allowed"> You are not in minting list !!! </span>
+             <div className="mint-not-allowed"> You are not in minting list !!! </div>
          ) : ""}
 
          { !isConnected ?  (
